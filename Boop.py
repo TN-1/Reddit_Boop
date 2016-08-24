@@ -25,7 +25,7 @@ def log(m, show=True):
 log("Signing in to reddit...")
 r = praw.Reddit(user_agent="Reddit kick and add bot. Maintained by github.com/TN-1")
 oauth_helper = PrawOAuth2Mini(r, app_key=app_key, app_secret=app_secret, access_token=access_token, refresh_token=refresh_token, scopes=scopes)
-s = praw.objects.Subreddit(r,"subreddit") # Add your subreddit here
+s = praw.objects.Subreddit(r,subreddit) # Add your subreddit here
 log("Done")
 
 # Sheets login
